@@ -20,6 +20,22 @@ Search for Makefile Language.  This adds a plugin to the IntelliJ environment to
 Open IntelliJ and navigate to Settings then Plugins and select Marketplace. 
 Search for TeXiFy IDEA.  This adds a plugin to the IntelliJ environment to support LaTeX.
 
+## Working with your LayTeX document
+
+Compiling your document
+
+```shell
+> make
+```
+
+Cleaning up generated files
+
+```shell
+> make clean
+```
+
+Note: You only need to commit the .tex files to GitHub as those are the source files for the LayTeX project.
+
 ## References
 
 * [Laytex Guide](https://physics.nyu.edu/~physlab/Lab_Main/Latexguide.pdf)
