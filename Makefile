@@ -13,11 +13,14 @@ TARGET=main.pdf
 TEX_FILES=$(wildcard *.tex)
 
 # Build rule
-all: $(TARGET)
+all: $(TARGET) astrodynamics.pdf
 
 $(TARGET): $(TEX_FILES)
 	$(LATEX) $(LATEX_FLAGS) $(basename $@)
 	$(LATEX) $(LATEX_FLAGS) $(basename $@)
+
+astrodynamics: astrodynamics.tex
+	$(LATEX) $(LATEX_FLAGS) astrodynamics.tex
 
 # Clean rule
 clean:
